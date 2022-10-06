@@ -46,6 +46,8 @@ button {
   border-top-right-radius: 20px; }
   .container__header .material-icons {
     color: white; }
+    .container__header .material-icons:hover {
+      cursor: pointer; }
 
 .formContainer {
   display: flex;

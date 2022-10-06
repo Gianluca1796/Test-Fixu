@@ -9,6 +9,9 @@
 
     .material-icons {
         color: white;
+        &:hover{
+            cursor: pointer;
+        }
     }
 }
 
