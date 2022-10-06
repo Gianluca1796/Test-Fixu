@@ -1,0 +1,52 @@
+.container{
+    padding: 10rem;
+}
+.container__header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+    .material-icons {
+        color: white;
+    }
+}
+
+
+
+.formContainer {
+    display: flex;
+    background-color: white;
+    border-bottom-left-radius: 20px;
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 50%;
+        padding: 2.5rem;
+
+        .checkbox[type="checkbox"].filled-in:checked+span:not(.lever):after {
+            border: 2px solid $secondary-color;
+            background-color: $secondary-color
+        }
+
+        .termAndConditions {
+            color: black;
+        }
+
+        input[type=text]:not(.browser-default),
+        input[type=email]:not(.browser-default) {
+            border-bottom: 1px solid $secondary-color;
+            height: auto;
+        }
+    }
+
+    &__img {
+        width: 50%;
+        border-radius: 20px;
+    }
+}
