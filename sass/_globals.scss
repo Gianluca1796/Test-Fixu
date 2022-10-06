@@ -34,5 +34,11 @@ button {
     font-weight: bold;
     border-radius: 5px;
     width: 90%;
-    
+    &:hover{
+        cursor: pointer;
+    }
+    &:focus{
+        background-color: $primary-color;
+    }
+
 }

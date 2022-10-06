@@ -1,4 +1,3 @@
-
 .container__header {
     background-color: black;
     display: flex;
@@ -32,12 +31,13 @@
             border: 2px solid $secondary-color;
             background-color: $secondary-color;
         }
-        .termAndConditionsContainer{
+
+        .termAndConditionsContainer {
             margin-bottom: 2rem;
-            
-                    .termAndConditions {
-                        color: black;
-                    }
+
+            .termAndConditions {
+                color: black;
+            }
         }
 
         input[type=text]:not(.browser-default),
@@ -46,6 +46,13 @@
             height: auto;
             width: 90%;
         }
+
+        input[type=text]:not(.browser-default):focus:not([readonly]),
+        input[type=email]:not(.browser-default):focus:not([readonly]) {
+            border-bottom: 1px solid $secondary-color;
+            box-shadow: $secondary-color 0px 1px 0px 0px
+        }
+
     }
 
     &__img {
