@@ -19,7 +19,9 @@ h1 {
 img {
   width: 100%;
   height: 100%;
-  border-radius: 20px; }
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px; }
 
 button {
   background-color: #F2C335;
@@ -27,10 +29,8 @@ button {
   padding: 1rem .5rem;
   font-size: 1.5em;
   font-weight: bold;
-  border-radius: 5px; }
-
-.container {
-  padding: 10rem; }
+  border-radius: 5px;
+  width: 90%; }
 
 .container__header {
   background-color: black;
@@ -46,7 +46,8 @@ button {
 .formContainer {
   display: flex;
   background-color: white;
-  border-bottom-left-radius: 20px; }
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px; }
   .formContainer__form {
     display: flex;
     flex-direction: column;
@@ -56,12 +57,15 @@ button {
     .formContainer__form .checkbox[type="checkbox"].filled-in:checked + span:not(.lever):after {
       border: 2px solid #F2C777;
       background-color: #F2C777; }
-    .formContainer__form .termAndConditions {
-      color: black; }
+    .formContainer__form .termAndConditionsContainer {
+      margin-bottom: 2rem; }
+      .formContainer__form .termAndConditionsContainer .termAndConditions {
+        color: black; }
     .formContainer__form input[type=text]:not(.browser-default),
     .formContainer__form input[type=email]:not(.browser-default) {
       border-bottom: 1px solid #F2C777;
-      height: auto; }
+      height: auto;
+      width: 90%; }
   .formContainer__img {
     width: 50%;
-    border-radius: 20px; }
+    height: 88vh; }

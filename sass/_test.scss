@@ -1,6 +1,4 @@
-.container{
-    padding: 10rem;
-}
+
 .container__header {
     background-color: black;
     display: flex;
@@ -21,6 +19,7 @@
     display: flex;
     background-color: white;
     border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 
     &__form {
         display: flex;
@@ -31,22 +30,26 @@
 
         .checkbox[type="checkbox"].filled-in:checked+span:not(.lever):after {
             border: 2px solid $secondary-color;
-            background-color: $secondary-color
+            background-color: $secondary-color;
         }
-
-        .termAndConditions {
-            color: black;
+        .termAndConditionsContainer{
+            margin-bottom: 2rem;
+            
+                    .termAndConditions {
+                        color: black;
+                    }
         }
 
         input[type=text]:not(.browser-default),
         input[type=email]:not(.browser-default) {
             border-bottom: 1px solid $secondary-color;
             height: auto;
+            width: 90%;
         }
     }
 
     &__img {
         width: 50%;
-        border-radius: 20px;
+        height: 88vh;
     }
 }
